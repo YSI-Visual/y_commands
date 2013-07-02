@@ -142,7 +142,7 @@ Compile options:
 	MAX_COMMANDS - The maximum number of commands which can be used.
 \**--------------------------------------------------------------------------**/
 
-#include "..\YSI-Internal\y_version"
+#include "..\YSI_Internal\y_version"
 
 #define MAX_COMMAND_LENGTH              (32)
 
@@ -154,19 +154,19 @@ Compile options:
 
 // Set commands as master 25.
 #define MASTER 25
-#include "..\YSI-Core\y_master"
+#include "..\YSI_Core\y_master"
 
 // Misc includes.
-#include "..\YSI-Storage\y_amx"
-#include "..\YSI-Coding\y_hooks"
-#include "..\YSI-Data\y_hashmap"
-#include "..\YSI-Data\y_playerarray"
-#include "..\YSI-Server\y_punycode"
+#include "..\YSI_Storage\y_amx"
+#include "..\YSI_Coding\y_hooks"
+#include "..\YSI_Data\y_hashmap"
+#include "..\YSI_Data\y_playerarray"
+#include "..\YSI_Server\y_punycode"
 
 // Include the group functions (maybe).
 #define _GROUP_MAKE_NAME<%0...%1> %0Command%1
 #define _GROUP_MAKE_LIMIT         MAX_COMMANDS
-#include "..\YSI-Players\y_groups\_funcs"
+#include "..\YSI_Players\y_groups\_funcs"
 
 #if defined YSI_TESTS
 	#if !defined Y_COMMANDS_NO_IPC
@@ -178,11 +178,11 @@ Compile options:
 #include "y_commands/impl"
 
 #if defined YSI_TESTS
-	#include "..\YSI-Core\y_testing"
+	#include "..\YSI_Core\y_testing"
 	#include "y_commands/tests"
 #endif
 
 // Restore previous settings.
 #undef _GROUP_MAKE_LIMIT
 #undef _GROUP_MAKE_NAME
-#include "..\YSI-Core\y_master"
+#include "..\YSI_Core\y_master"
