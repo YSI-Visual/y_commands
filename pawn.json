@@ -1,0 +1,9 @@
+{
+	"user": "YSI-Visual",
+	"repo": "y_commands",
+	"entry": "test.pwn",
+	"output": "test.amx",
+	"dependencies": [
+	]
+}
+
