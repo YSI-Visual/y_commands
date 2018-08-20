@@ -1,3 +1,52 @@
+# y_commands
+
+The most fully featured command processor for SA:MP.  Includes:
+
+* Full internationalisation - type commands in any language.
+* Native permissions support, dynamically change who can use a command at any time with no code required within the command.
+* y_groups support to further extend the permissions system to teams etc.
+* Integrated help, so that each command can easilly have its help text defined along side its code.
+* Multiple other checks for hidden/disabled/errored commands.
+* Change the command prefix from `/`.
+* `OnPlayerCommandReceived` and `OnPlayerCommandPerformed`.
+* Rename commands at a per-player level (e.g. to have the same command in multiple languages).
+* Alternate names for the same command.
+* Multi-script (filterscript) support.
+* `Command()` and `PlayerCommand()` Iterators to use with `foreach`.
+
+
+[![sampctl](https://shields.southcla.ws/badge/sampctl-y_commands-2f2f2f.svg?style=for-the-badge)](https://github.com/YSI-Visual/y_commands)
+
+## Installation
+
+To install just this one library:
+
+```bash
+sampctl package install YSI-Visual/y_commands
+```
+
+Include in your code and begin using the library:
+
+```pawn
+#include <YSI-Visual/y_commands>
+```
+
+## Documentation
+
+* [Quick Start](YSI-Visual/y_commands/quick-start.md) - One very simple example of getting started with this library.
+* [Features](YSI-Visual/y_commands/features.md) - More features and examples.
+* [FAQs](YSI-Visual/y_commands/faqs.md) - Frequently Asked Questions, including errors and solutions.
+* [API](YSI-Visual/y_commands/api.md) - Full list of all functions and their meaning.
+* [Internal](YSI-Visual/y_commands/internal.md) - Internal developer documentation for the system.
+
+## Testing
+
+To test, simply run the package:
+
+```bash
+sampctl package run
+```
+
 # YSI
 
 ## General Information
@@ -109,34 +158,4 @@ Libraries that have in-game visible effects.
 * [y_races](https://github.com/YSI-Visual/y_races/blob/dev/YSI-Visual/y_races.md)
 * [y_zonenames](https://github.com/YSI-Visual/y_zonenames/blob/dev/YSI-Visual/y_zonenames.md)
 * [y_zonepulse](https://github.com/YSI-Visual/y_zonepulse/blob/dev/YSI-Visual/y_zonepulse.md)
-
-# y_commands
-
-[![sampctl](https://shields.southcla.ws/badge/sampctl-y_commands-2f2f2f.svg?style=for-the-badge)](https://github.com/YSI-Visual/y_commands)
-
-## Installation
-
-To install just this one library:
-
-```bash
-sampctl package install YSI-Visual/y_commands
-```
-
-Include in your code and begin using the library:
-
-```pawn
-#include <YSI-Visual/y_commands>
-```
-
-## Usage
-
-[Click Here] (YSI-Visual/y_commands.md)
-
-## Testing
-
-To test, simply run the package:
-
-```bash
-sampctl package run
-```
 
