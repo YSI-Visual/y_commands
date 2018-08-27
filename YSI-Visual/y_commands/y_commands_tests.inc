@@ -501,7 +501,7 @@ TEST__ y_commands_Parameters()
 	ASSERT_ZE(YSI_gsHelp);
 }
 
-YCMD:y_commands_t1(playerid, params[], help)
+COMMAND__ y_commands_t1(playerid, params[], help)
 {
 	return 1;
 }
@@ -511,7 +511,7 @@ YCMD:y_commands_t11(playerid, params[], help)
 	return 1;
 }
 
-YCMD:y_commands_t111(playerid, params[], help)
+COMMAND__ y_commands_t111(playerid, params[], help)
 {
 	return 1;
 }
@@ -521,7 +521,7 @@ YCMD:y_commands_t1111(playerid, params[], help)
 	return 1;
 }
 
-YCMD:y_commands_t11111(playerid, params[], help)
+COMMAND__ y_commands_t11111(playerid, params[], help)
 {
 	return 1;
 }
